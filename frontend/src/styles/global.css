@@ -35,3 +35,35 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+.section-title { font-size: 15px; margin: 18px 0 8px; }
+.muted-text { color: var(--muted); font-size: 13px; }
+.board { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.board-col { background: #fff; border: 1px solid var(--border); border-radius: 8px; display: flex; flex-direction: column; min-height: 240px; }
+.board-col--waiting { border-top: 3px solid #d97706; }
+.board-col--tested { border-top: 3px solid var(--brand); }
+.board-col--settled { border-top: 3px solid #16a34a; }
+.board-head { display: flex; justify-content: space-between; align-items: center; padding: 10px 12px; border-bottom: 1px solid var(--border); font-weight: 600; }
+.board-head em { font-style: normal; background: #eef2f7; border-radius: 999px; padding: 0 10px; font-size: 12px; color: var(--muted); }
+.board-hint { margin: 0; padding: 6px 12px; font-size: 12px; color: var(--muted); }
+.board-body { padding: 10px 12px; display: flex; flex-direction: column; gap: 10px; }
+.board-empty { margin: auto 0; text-align: center; color: var(--muted); font-size: 13px; }
+.batch-card { border: 1px solid var(--border); border-radius: 6px; padding: 8px 10px; background: #fbfdff; }
+.batch-card-head { display: flex; justify-content: space-between; align-items: center; }
+.batch-truck { font-size: 12px; background: #eef2f7; border-radius: 999px; padding: 1px 8px; color: var(--muted); }
+.batch-supplier { margin: 4px 0 6px; font-size: 13px; }
+.batch-meta { margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 2px 10px; font-size: 12px; }
+.batch-meta div { display: flex; gap: 4px; }
+.batch-meta dt { color: var(--muted); white-space: nowrap; }
+.batch-meta dd { margin: 0; }
+.batch-actions { margin-top: 8px; }
+.batch-done { font-size: 12px; color: #16a34a; }
+.modal-mask { position: fixed; inset: 0; background: rgba(15, 23, 42, 0.45); display: flex; align-items: center; justify-content: center; z-index: 50; }
+.modal { background: #fff; border-radius: 8px; width: 460px; max-width: calc(100vw - 32px); max-height: calc(100vh - 64px); overflow: auto; }
+.modal-head { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; border-bottom: 1px solid var(--border); }
+.modal-head h3 { margin: 0; font-size: 15px; }
+.modal-body { padding: 14px 16px; }
+.form-item { display: block; margin-bottom: 10px; }
+.form-item span { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+.form-item input, .form-item select { width: 100%; border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px; font-size: 13px; }
+.form-tip { font-size: 12px; color: var(--muted); margin: 4px 0 8px; }
+.modal-foot { display: flex; justify-content: flex-end; gap: 8px; margin-top: 6px; }
